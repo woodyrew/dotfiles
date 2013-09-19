@@ -3,3 +3,10 @@ alias gitk='gitk &'
 alias open='nautilus'
 alias pu='pushd'
 alias pd='popd'
+
+
+# functions
+
+mkcd () {
+  mkdir -p "$@" && cd "$@";
+}
