@@ -1,0 +1,13 @@
+
+
+# Git Prompt.
+if [ -f ~/bin/bash-git-prompt/gitprompt.sh ]; then
+    ResetColor="\[\033[0m\]"        # Text Reset
+    Yellow="\[\033[0;33m\]"         # Yellow
+
+    # gitprompt configuration
+    GIT_PROMPT_START="\n_LAST_COMMAND_INDICATOR_ \D{%A %F} \t\n${Yellow}\w${ResetColor}" # Configure as you desire
+    GIT_PROMPT_END=" \n\u@${White}\h${ResetColor}:\$ " # Configure as you desire
+
+    source ~/bin/bash-git-prompt/gitprompt.sh
+fi
