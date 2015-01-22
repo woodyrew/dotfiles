@@ -7,6 +7,7 @@ git clone https://github.com/magicmonty/bash-git-prompt.git;
 backup_file ~/.bashrc;
 backup_file ~/.bash_aliases; # might not exist
 backup_file ~/.gitconfig;    # might not exist
+backup_file ~/.inputrc;      # might not exist
 
 # Appends the contents of the file to bashrc
 cat ~/bin/git/dotfiles/installation/git_prompt_for_bashrc.txt >> ~/.bashrc;
