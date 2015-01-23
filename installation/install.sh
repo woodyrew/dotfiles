@@ -1,5 +1,5 @@
 # backup file takes a filename and backs it up with a datestamp.
-backup_file () { filename=$1; filetime=$(date +%Y%m%d_%H%M%S); cp ${filename} ${filename}.bk_${filetime}; }
+backup_file () { filename=$1; filetime=$(date +%Y%m%d_%H%M%S); cp ${filename} ${filename}.${filetime}.bak; }
 
 # clones the bash git prompt repository.
 git clone https://github.com/magicmonty/bash-git-prompt.git;
