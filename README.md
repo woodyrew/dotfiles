@@ -32,6 +32,9 @@ ls ~/*.bak
 ```
 Should locate them for you.
 
+# Sublime Text Preferences
+Have a look in the `sublime` directory for how to get my preferences.
+
 # Disclaimer
 
 You run this code at your own risk; I take no responsibility for any damage that is caused by running this installation.
