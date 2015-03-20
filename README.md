@@ -33,7 +33,7 @@ ls ~/*.bak
 Should locate them for you.
 
 # Sublime Text Preferences
-Have a look in the `sublime` directory for how to get my preferences.
+Have a look in the [sublime directory](https://github.com/woodyrew/dotfiles/tree/master/sublime) for how to get my preferences.
 
 # Disclaimer
 
