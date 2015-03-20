@@ -1,0 +1,30 @@
+{
+	"added_words":
+	[
+		"kitesurfing"
+	],
+	"autoReloadChanged": false,
+	"auto_complete_commit_on_tab": true,
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"default_line_ending": "unix",
+	"dictionary": "Packages/Language - English/en_GB.dic",
+	// Allows tabs to scroll left and right, instead of simply shrinking
+	"enable_tab_scrolling": false,
+	"fade_fold_buttons": false,
+	"font_face": "Source Code Pro, Monospace",
+	"font_size": 11,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignoreChanged": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers": [80],
+	"shift_tab_unindent": true,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": false,
+	"trim_automatic_white_space": true,
+	"word_wrap": true
+}
