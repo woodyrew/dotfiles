@@ -1,5 +1,15 @@
+#!/bin/bash
+
 # backup file takes a filename and backs it up with a datestamp.
-backup_file () { filename=$1; filetime=$(date +%Y%m%d_%H%M%S); cp ${filename} ${filename}.${filetime}.bak; }
+backup_file () {
+  filename=$1;
+  filetime=$(date +%Y%m%d_%H%M%S);
+  
+  if [ -f ${filename} ]; then
+    # Only backup if it exists
+    cp ${filename} ${filename}.${filetime}.bak;
+  fi
+}
 
 # clones the bash git prompt repository.
 git clone https://github.com/magicmonty/bash-git-prompt.git;
@@ -10,10 +20,10 @@ backup_file ~/.gitconfig;    # might not exist
 backup_file ~/.inputrc;      # might not exist
 
 # Appends the contents of the file to bashrc
-cat ~/bin/git/dotfiles/installation/git_prompt_for_bashrc.txt >> ~/.bashrc;
+cat ~/bin/dotfiles/installation/git_prompt_for_bashrc.txt >> ~/.bashrc;
 
 # Copy the dot files to make life awesome
-cp -v ~/bin/git/dotfiles/.gitconfig ~/bin/git/dotfiles/.gitmessage.txt ~/bin/git/dotfiles/.inputrc ~/bin/git/dotfiles/.bash_aliases ~/
+cp -v ~/bin/dotfiles/.gitconfig ~/bin/dotfiles/.gitmessage.txt ~/bin/dotfiles/.inputrc ~/bin/dotfiles/.bash_aliases ~/
 
 # Updates git to use the git message template
 git config --global commit.template ~/.gitmessage.txt
