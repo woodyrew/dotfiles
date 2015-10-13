@@ -2,6 +2,13 @@
 
 Useful configurations for: bash, git etc.
 
+# Prerequisites
+[git](https://git-scm.com/) - Install with:
+```bash
+sudo apt-get update
+sudo apt-get install git
+```
+
 # Installation
 
 See [Disclaimer](#Disclaimer); Run the following in your terminal:
