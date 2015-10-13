@@ -39,8 +39,15 @@ ls ~/*.bak
 ```
 Should locate them for you.
 
+
 # Sublime Text Preferences
-Have a look in the [sublime directory](https://github.com/woodyrew/dotfiles/tree/master/sublime) for how to get my preferences.
+Have a look at the [Sublime Text preference configuration](https://github.com/woodyrew/dotfiles/tree/master/sublime/README.md) for how to get my preferences.
+
+
+# Extras
+In [extras](https://github.com/woodyrew/dotfiles/tree/master/extras/README.md) there's a list of programs and tools I also install.
+
+---
 
 # Disclaimer
 
