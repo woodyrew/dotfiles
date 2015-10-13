@@ -7,6 +7,7 @@
 1. Copy preference files into `~/.config/sublime-text-3/Packages/User/`
 ```bash
 cp -v "~/bin/dotfiles/sublime/Default (Linux).sublime-keymap" "~/bin/dotfiles/sublime/Preferences.sublime-settings" ~/.config/sublime-text-3/Packages/User/
+```
 
 ## Packages:
 [Install Package Control](https://packagecontrol.io/installation)
