@@ -19,12 +19,14 @@ sudo npm install -g nodemon eslint
 [15 things to do after installing 15.04](http://www.tecmint.com/things-to-do-after-installing-ubuntu-15-04-desktop/)
 
 ## Useful of Programs
+- Synapse - Application launcher
 - VLC - Video playback
 - GIMP - Image editing
 - Shutter - Screenshot utility
 - Darktable - Photo workflow
 - Inkscape - Vector graphics
 - Audacity - Audio editing
+- [Silentcast](https://github.com/colinkeenan/silentcast/#getting-silentcast) - Screencast & gif generation 
 - Meld - Diff tool
 - Back In Time - Backup utility
 - Blender - Video Editing
