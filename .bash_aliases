@@ -4,7 +4,10 @@ alias open='nautilus'
 alias pu='pushd'
 alias pd='popd'
 
-# instant web server
+# Apply standard eslint setup to current directory
+alias eslint_up="cp -v ~/Dropbox/Documents/helpful/.eslint* ./"
+
+# Instant web server
 alias webserver="python -m SimpleHTTPServer 8000"
 
 # functions
