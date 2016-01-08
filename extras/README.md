@@ -30,6 +30,7 @@ sudo npm install -g nodemon eslint
 - Meld - Diff tool
 - Back In Time - Backup utility
 - Blender - Video Editing
+- [Record Skype Calls](http://www.webupd8.org/2014/03/automatically-record-skype-calls-linux-skype-call-recorder.html)
 
 ### Closed Source
 - Spotify - Streaming Music
