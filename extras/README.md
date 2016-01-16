@@ -32,6 +32,34 @@ Then...
 nvm install v4
 ```
 
+## Ubuntu configuration
+- System Settings
+  - Appearance > Behaviour
+    - Auto-hide the Launcher: On
+    - Reveal Location: Top left corner
+    - Enable Workspaces: Check
+    - Show the menus for a window: In the windows's title bar
+  - Security & Privacy
+    - Files & Applications
+      - Record file and application usage: Off
+    - Search
+      - Include online search results: Off
+    - Diagnostics
+      - Send occasional system information to Canonical: Uncheck
+  - Mouse and Touchpad > Touchpad
+    - Tap to click: Check
+    - Two finger scroll: Check
+    - Natural scrolling: Check
+  - Keyboard
+  - Time & Date
+  - Software & Updates > Additional Drivers
+- Nautilus > Edit > Preferences
+  - Views
+    - View new folders using: List View
+    - Sort folders before files: Check
+  - Display
+    - Navigate folders in a tree: Check
+
 ## Post Install Recommenations
 [15 things to do after installing 15.04](http://www.tecmint.com/things-to-do-after-installing-ubuntu-15-04-desktop/)
 
