@@ -45,6 +45,13 @@ Then search for "System Load Indicator"
 
 `Load: $(decimals(load.avg,2)), $(decimals(load.avg5,2)), $(decimals(load.avg15,2))`
 
+## Tomate - Pomodoro timer
+```bash
+sudo add-apt-repository ppa:stvs/tomate
+sudo apt-get update
+sudo apt-get install tomate
+```
+
 ## Ubuntu configuration
 - System Settings
   - Appearance > Behaviour
