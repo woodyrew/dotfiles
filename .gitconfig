@@ -36,7 +36,12 @@
 	ci = commit
 	br = branch
 	co = checkout
-    df = diff
+	df = diff
 
 [push]
 	default = simple
+
+[diff]
+    external = meld-git
+[merge]
+	tool = meld

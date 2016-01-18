@@ -32,6 +32,26 @@ Then...
 nvm install v4
 ```
 
+## System multiload indicator
+```bash
+sudo add-apt-repository ppa:indicator-multiload/stable-daily
+sudo apt-get update
+sudo apt-get install indicator-multiload
+```
+
+Then search for "System Load Indicator"
+
+[For 1, 5, 15min loads](https://answers.launchpad.net/indicator-multiload/+question/227164). In *Menu items…* and *Indicator Items…* for load:
+
+`Load: $(decimals(load.avg,2)), $(decimals(load.avg5,2)), $(decimals(load.avg15,2))`
+
+## Tomate - Pomodoro timer
+```bash
+sudo add-apt-repository ppa:stvs/tomate
+sudo apt-get update
+sudo apt-get install tomate
+```
+
 ## Ubuntu configuration
 - System Settings
   - Appearance > Behaviour
