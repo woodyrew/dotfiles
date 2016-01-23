@@ -14,13 +14,7 @@ sudo apt-get install synapse
 ```
 
 ## Git
-```bash
-sudo apt-get install git
-git config --global user.name "Your Name"
-git config --global user.email "youremail@domain.com"
-```
 
-Then
 [Generate ssh keys and add to Github etc.](https://help.github.com/articles/generating-ssh-keys/)
 
 
