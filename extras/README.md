@@ -93,7 +93,7 @@ sudo apt-get install tomate
 - Darktable - Photo workflow
 - Inkscape - Vector graphics
 - Audacity - Audio editing
-- [Silentcast](https://github.com/colinkeenan/silentcast/#getting-silentcast) - Screencast & gif generation 
+- [Silentcast](https://github.com/colinkeenan/silentcast#ubuntu-linux-full-install) - Screencast & gif generation 
 - Back In Time - Backup utility
 - Blender - Video Editing
 - [Record Skype Calls](http://www.webupd8.org/2014/03/automatically-record-skype-calls-linux-skype-call-recorder.html)
