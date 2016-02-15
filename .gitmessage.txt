@@ -1,4 +1,4 @@
 
-# Module - Section: Broad description until less than symbol........ <
+# Module - Section: Broad description (This commit will...)____________________|
 
-# More detailed description below here wrapped to 80 chars           <
+# More detailed description below - wrap to 80 chars.__________________________|
