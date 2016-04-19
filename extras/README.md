@@ -24,7 +24,12 @@ sudo apt-get install synapse
 Then...
 ```bash
 nvm install v4
+nvm install v5
 ```
+
+### Troubleshooting
+
+- [An error "Error: watch ENOSPC"](https://github.com/remy/nodemon/issues/214#issuecomment-114362402)
 
 ## System multiload indicator
 ```bash
