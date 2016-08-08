@@ -8,7 +8,8 @@ alias pd='popd'
 alias eslint_up="cp -v ~/Dropbox/Documents/helpful/.eslint* ./"
 
 # Instant web server
-alias webserver="python -m SimpleHTTPServer 8000"
+alias webserver2="python -m SimpleHTTPServer 8000"
+alias webserver="python -m http.server 8000"
 
 # functions
 
