@@ -4,7 +4,7 @@
 backup_file () {
   filename=$1;
   filetime=$(date +%Y%m%d_%H%M%S);
-  
+
   if [ -f ${filename} ]; then
     # Only backup if it exists
     cp -v ${filename} ${filename}.${filetime}.bak;
@@ -12,7 +12,7 @@ backup_file () {
 }
 
 # clones the bash git prompt repository.
-git clone https://github.com/magicmonty/bash-git-prompt.git;
+git clone https://github.com/magicmonty/bash-git-prompt.git --depth=1;
 
 echo "Backing Up Files - Some might not exist";
 backup_file ~/.bashrc;
