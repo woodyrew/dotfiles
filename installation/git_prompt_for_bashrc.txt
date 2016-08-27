@@ -2,8 +2,9 @@
 
 # Git Prompt.
 if [ -f ~/bin/bash-git-prompt/gitprompt.sh ]; then
-    ResetColor="\[\033[0m\]"        # Text Reset
-    Yellow="\[\033[0;33m\]"         # Yellow
+    ResetColor="\[\033[0m\]" # Text Reset
+    Yellow="\[\033[0;33m\]"  # Yellow
+    White="\[\e[37m\]"       # White
 
     # gitprompt configuration
     GIT_PROMPT_THEME="Default_Ubuntu"
