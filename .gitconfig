@@ -1,5 +1,5 @@
 [user]
-	name = Woody Goodricke
+	name = Andrew Goodricke
 	email = github@andrewgoodricke.com
 
 [color]
@@ -37,6 +37,11 @@
 	br = branch
 	co = checkout
 	df = diff
+	f = !git lfs fetch --recent && git fetch
+	pr = pull --rebase --prune
+	pt = !git push && git push --tags
+	save = !git add -A && git commit -m 'SAVEPOINT WIP'
+	undo = reset HEAD~1 --mixed
 
 [push]
 	default = simple
@@ -45,3 +50,10 @@
     external = meld-git
 [merge]
 	tool = meld
+[commit]
+	template = /home/andrew/.gitmessage.txt
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
