@@ -1,5 +1,14 @@
 # Tools and Utilities
 
+## Bash RC
+
+Add the following to get nice history usage.
+```
+HISTSIZE=5000
+HISTFILESIZE=10000
+HISTIGNORE=":ls:git st:node:npm i:git pr:git push:git df:a:[ \t]*"
+```
+
 ## Synapse Launcher
 A quick launcher triggered by a configurable key combination. I like `ctrl + alt + space`.
 ```bash
@@ -23,8 +32,7 @@ sudo apt-get install synapse
 
 Then...
 ```bash
-nvm install v4
-nvm install v5
+nvm install lts/*
 ```
 
 ### Troubleshooting
