@@ -1,0 +1,16 @@
+'.source.js':
+  'Debug (debug)':
+    'prefix': 'debug'
+    'body': 'debug(\'${1:here}$2\', $1);'
+
+  'Error (debug)':
+    'prefix': 'err'
+    'body': 'error(\'${1:here}$2\', $1);'
+
+  'Info (debug)':
+    'prefix': 'info'
+    'body': 'error(\'${1:here}$2\', $1);'
+    
+  'console.log (woody)':
+    'prefix': 'log'
+    'body': 'console.log(\'${1:here}$2\', $1);'
