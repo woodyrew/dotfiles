@@ -39,8 +39,18 @@ ls ~/*.bak
 ```
 Should locate them for you.
 
+# Atom Config
+**_Untested!_**
+
+Installs packages I use and restores my config to Atom
+
+```bash
+atom-config
+```
+
 
 # Sublime Text Preferences
+**_Probably out of date_**
 Have a look at the [Sublime Text preference configuration](https://github.com/woodyrew/dotfiles/tree/master/sublime/README.md) for how to get my preferences.
 
 
