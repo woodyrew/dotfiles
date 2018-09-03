@@ -1,0 +1,8 @@
+#!/bin/bash
+cp ~/.atom/*.{json,cson,coffee,less} ~/bin/dotfiles/atom 2>/dev/null
+apm list --installed --bare > ~/bin/dotfiles/atom/packages.list
+pushd ~/bin/dotfiles
+git add atom
+git commit -m 'Atom configuration: Updated'
+git push
+popd

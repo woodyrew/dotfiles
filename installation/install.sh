@@ -31,8 +31,8 @@ cp -v ~/bin/dotfiles/.gitconfig ~/bin/dotfiles/.gitmessage.txt ~/bin/dotfiles/.i
 # Updates git to use the git message template
 git config --global commit.template ~/.gitmessage.txt
 
-# Add meld-git bash script
-cp -v ~/bin/dotfiles/installation/meld-git ~/bin/;
+# Add bin bash scripts
+cp -v ~/bin/dotfiles/installation/bin/* ~/bin/;
 
 # Copy Natural Scrolling config file
 # echo "Attempting to configure Natural Scrolling as per:";
