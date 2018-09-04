@@ -8,6 +8,7 @@
     disabledPackages: [
       "whitespace"
     ]
+    excludeVcsIgnoredPaths: false
     packagesWithKeymapsDisabled: [
       "lorem"
     ]
@@ -38,7 +39,6 @@
       singleQuote: true
     useEslint: true
   "tree-view":
-    hideVcsIgnoredFiles: true
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
