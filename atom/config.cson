@@ -8,7 +8,6 @@
     disabledPackages: [
       "whitespace"
     ]
-    excludeVcsIgnoredPaths: false
     packagesWithKeymapsDisabled: [
       "lorem"
     ]
@@ -22,6 +21,7 @@
     softWrap: true
   "exception-reporting":
     userId: "b735210a-54c6-7137-dea6-95044ac0dd93"
+  "linter-eslint": {}
   "linter-ui-default":
     showPanel: true
   lorem:
@@ -39,6 +39,7 @@
       singleQuote: true
     useEslint: true
   "tree-view":
+    hideVcsIgnoredFiles: true
     squashDirectoryNames: true
   welcome:
     showOnStartup: false

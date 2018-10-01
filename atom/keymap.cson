@@ -37,3 +37,9 @@
 
 'atom-text-editor[data-grammar="source gfm"]':
   'ctrl-shift-m': 'markdown-preview:toggle'
+
+'body':
+  'ctrl-tab': 'pane:show-next-item'
+  'ctrl-tab ^ctrl': 'unset!'
+  'ctrl-shift-tab': 'pane:show-previous-item'
+  'ctrl-shift-tab ^ctrl': 'unset!'
