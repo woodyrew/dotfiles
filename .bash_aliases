@@ -3,7 +3,8 @@ alias gitk='gitk &'
 alias open='nautilus'
 alias pu='pushd'
 alias pd='popd'
-alias a="atom ."
+alias c="codium ."
+alias code="codium"
 
 # Refresh npm packages
 alias npm_refresh_packages="rm -rf ./node_modules ./package-lock.json ./bower_components ./package.md5 && npm run npm_install || npm i"

@@ -48,12 +48,6 @@ Installs packages I use and restores my config to Atom
 atom-config
 ```
 
-
-# Sublime Text Preferences
-**_Probably out of date_**
-Have a look at the [Sublime Text preference configuration](https://github.com/woodyrew/dotfiles/tree/master/sublime/README.md) for how to get my preferences.
-
-
 # Extras
 In [extras](https://github.com/woodyrew/dotfiles/tree/master/extras/README.md) there's a list of programs and tools I also install.
 

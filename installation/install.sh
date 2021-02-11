@@ -19,7 +19,6 @@ backup_file ~/.bashrc;
 backup_file ~/.bash_aliases;                                      # might not exist
 backup_file ~/.gitconfig;                                         # might not exist
 backup_file ~/.inputrc;                                           # might not exist
-backup_file /usr/share/X11/xorg.conf.d/20-natural-scrolling.conf; # might not exist
 
 echo "Configuring system";
 # Appends the contents of the file to bashrc
@@ -33,11 +32,6 @@ git config --global commit.template ~/.gitmessage.txt
 
 # Add bin bash scripts
 cp -v ~/bin/dotfiles/installation/bin/* ~/bin/;
-
-# Copy Natural Scrolling config file
-# echo "Attempting to configure Natural Scrolling as per:";
-# echo "http://askubuntu.com/questions/137444/is-there-anyway-to-enable-system-wide-inverse-scrolling/519859#519859";
-# sudo cp -v ~/bin/dotfiles/installation/20-natural-scrolling.conf /usr/share/X11/xorg.conf.d/
 
 echo "Complete"; echo;
 echo "You may need to configure git with your name and email";

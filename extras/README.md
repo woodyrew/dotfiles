@@ -10,6 +10,8 @@ HISTIGNORE=":ls:git st:node:npm i:git pr:git push:git df:a:[ \t]*"
 ```
 
 ## Synapse Launcher
+_This isn't really needed as of 20.04 as the standard Ubuntu launcher has all the functionalities I use._
+
 A quick launcher triggered by a configurable key combination. I like `ctrl + alt + space`.
 ```bash
 sudo apt-add-repository ppa:synapse-core/testing
@@ -21,6 +23,9 @@ or on Ubuntu > 15.10
 ```bash
 sudo apt-get install synapse
 ```
+
+## Gnome Tweak
+Install via Ubuntu Software
 
 ## Git
 
@@ -41,9 +46,7 @@ nvm install lts/*
 
 ## System multiload indicator
 ```bash
-sudo add-apt-repository ppa:indicator-multiload/stable-daily
-sudo apt-get update
-sudo apt-get install indicator-multiload
+sudo apt install indicator-multiload
 ```
 
 Then search for "System Load Indicator"
@@ -67,7 +70,7 @@ sudo apt-get update
 sudo apt-get install teatime-unity 
 ```
 
-## Ubuntu configuration
+## Ubuntu 16.04 configuration
 - System Settings
   - Appearance > Behaviour
     - Auto-hide the Launcher: On
@@ -99,25 +102,24 @@ sudo apt-get install teatime-unity
 [15 things to do after installing 15.04](http://www.tecmint.com/things-to-do-after-installing-ubuntu-15-04-desktop/)
 
 ## Useful of Programs
-- Synapse - Application launcher
+- ~~Synapse - Application launcher~~
 - Meld - Diff tool: `sudo apt-get install meld`
-- Atom - Code Editor: [Atom .deb download](https://atom.io/)
+- ~~Atom - Code Editor: [Atom .deb download](https://atom.io/)~~
+- Codium - Code Editor using VSCode source: [VSCodium](https://vscodium.com/)
 - VLC - Video playback
 - GIMP - Image editing
-- Shutter - Screenshot utility
+- Shutter - Screenshot utility `sudo snap install shutter`
 - Darktable - Photo workflow
 - Inkscape - Vector graphics
 - Audacity - Audio editing
 - [Silentcast](https://github.com/colinkeenan/silentcast#ubuntu-linux-full-install) - Screencast & gif generation 
 - Back In Time - Backup utility
 - Blender - Video Editing
-- [Record Skype Calls](http://www.webupd8.org/2014/03/automatically-record-skype-calls-linux-skype-call-recorder.html)
 
 ### Closed Source
 - Spotify - Streaming Music
 - Dropbox - File Storage
 - Slack - Chat: [Slack .deb download](https://slack.com/downloads)
-- ~~Sublime Text 3 - Code Editor~~
 
 ## Motivational fortunes
 To enable `fortune motiv`, short for motivational run the following:
