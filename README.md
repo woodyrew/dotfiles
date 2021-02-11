@@ -39,15 +39,6 @@ ls ~/*.bak
 ```
 Should locate them for you.
 
-# Atom Config
-**_Untested!_**
-
-Installs packages I use and restores my config to Atom
-
-```bash
-atom-config
-```
-
 # Extras
 In [extras](https://github.com/woodyrew/dotfiles/tree/master/extras/README.md) there's a list of programs and tools I also install.
 
