@@ -37,6 +37,7 @@
   br = branch
   co = checkout
   df = diff
+  wt = worktree
   f = !git lfs fetch --recent && git fetch
   fr = !git f && git pr
   pr = pull --rebase --prune
