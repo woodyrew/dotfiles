@@ -40,6 +40,14 @@ Then...
 nvm install lts/*
 ```
 
+### npm tab completion
+
+[Enables tab-completion in all npm commands.](https://docs.npmjs.com/cli/v7/commands/npm-completion)
+
+```bash
+npm completion >> ~/.bashrc
+```
+
 ### Troubleshooting
 
 - [An error "Error: watch ENOSPC"](https://github.com/remy/nodemon/issues/214#issuecomment-114362402)
