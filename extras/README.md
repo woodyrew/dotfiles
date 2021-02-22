@@ -6,7 +6,7 @@ Add the following to get nice history usage.
 ```
 HISTSIZE=5000
 HISTFILESIZE=10000
-HISTIGNORE=":ls:git st:node:npm i:git pr:git push:git df:a:[ \t]*"
+HISTIGNORE=":ls:git st:node:npm i:git pr:git push:git df:c:[ \t]*"
 ```
 
 ## Synapse Launcher
