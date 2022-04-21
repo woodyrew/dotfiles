@@ -1,10 +1,13 @@
 alias ls='ls -plahv --group-directories-first --color=always'
 alias gitk='gitk &'
-alias open='nautilus'
+alias open='xdg-open'
 alias pu='pushd'
 alias pd='popd'
 alias c="codium ."
 alias code="codium"
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 # Refresh npm packages
 alias npm_refresh_packages="rm -rf ./node_modules ./package-lock.json ./bower_components ./package.md5 && npm run npm_install || npm i"
