@@ -7,7 +7,9 @@ Add the following to get nice history usage.
 ```
 HISTSIZE=5000
 HISTFILESIZE=10000
-HISTIGNORE=":ls:git st:node:npm i:git pr:git push:git df:c:[ \t]*"
+
+# History ignores the following commands
+HISTIGNORE=":ls:git st:node:npm i:git pr:git push:git df:c"
 ```
 
 Add alert appending to long commands.
@@ -25,15 +27,7 @@ _This isn't really needed as of 20.04 as the standard Ubuntu launcher has all th
 A quick launcher triggered by a configurable key combination. I like `ctrl + alt + space`.
 
 ```bash
-sudo apt-add-repository ppa:synapse-core/testing
-sudo apt-get update
-sudo apt-get install synapse
-```
-
-or on Ubuntu > 15.10
-
-```bash
-sudo apt-get install synapse
+sudo apt install synapse
 ```
 
 ## Gnome Tweak
@@ -125,19 +119,14 @@ sudo apt-get install teatime-unity
   - Display
     - Navigate folders in a tree: Check
 
-## Post Install Recommenations
-
-[15 things to do after installing 15.04](http://www.tecmint.com/things-to-do-after-installing-ubuntu-15-04-desktop/)
-
 ## Useful of Programs
 
 - ~~Synapse - Application launcher~~
-- Meld - Diff tool: `sudo apt-get install meld`
-- ~~Atom - Code Editor: [Atom .deb download](https://atom.io/)~~
+- Meld - Diff tool: `sudo apt install meld`
 - Codium - Code Editor using VSCode source: [VSCodium](https://vscodium.com/)
 - VLC - Video playback
 - GIMP - Image editing
-- Shutter - Screenshot utility `sudo snap install shutter`
+- ~~Shutter - Screenshot utility `sudo snap install shutter`~~
 - Darktable - Photo workflow
 - Inkscape - Vector graphics
 - Audacity - Audio editing

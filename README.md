@@ -5,8 +5,8 @@ Useful configurations for: bash, git etc.
 # Prerequisites
 [git](https://git-scm.com/) - Install with:
 ```bash
-sudo apt-get update
-sudo apt-get install git
+sudo apt update
+sudo apt install git
 ```
 
 # Installation

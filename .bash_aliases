@@ -19,8 +19,7 @@ alias clear_orig="find . -type f -name '*.orig' -not -path './node_modules/*' -e
 alias eslint_up="cp -v ~/Dropbox/Documents/helpful/.eslint* ./"
 
 # Instant web server
-alias serve2="python -m SimpleHTTPServer"
-alias serve="python -m http.server"
+alias serve="python3 -m http.server"
 
 # functions
 
