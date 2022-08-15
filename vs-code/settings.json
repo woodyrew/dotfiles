@@ -1,0 +1,31 @@
+{
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.minimap.enabled": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.statusBar.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.colorTheme": "Monokai Dimmed",
+  "files.associations": {
+    "*.hbs": "handlebars"
+  },
+  "files.trimTrailingWhitespace": true,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.focusRecentEditorAfterClose": false,
+  "cSpell.language": "en-GB",
+  "svg.preview.mode": "svg",
+  "svg.minify.prefixIds": true,
+  "svg.minify.removeViewBox": false,
+  "redhat.telemetry.enabled": false,
+  "svelte.enable-ts-plugin": true,
+  "editor.fontFamily": "'Mononoki', 'Ubuntu Mono', monospace, 'Droid Sans Fallback'",
+  "editor.fontSize": 16,
+  "editor.linkedEditing": true,
+  "workbench.editorAssociations": {
+    "*.html": "default"
+  }
+}
