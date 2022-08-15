@@ -140,6 +140,29 @@ sudo apt-get install teatime-unity
 - Dropbox - File Storage
 - Slack - Chat: [Slack .deb download](https://slack.com/downloads)
 
+## Coding fonts
+
+### Choosing:
+- https://www.codingfont.com/
+- https://www.programmingfonts.org/
+
+### Current Favourite
+
+- https://github.com/madmalik/mononoki
+- Review: https://github.com/be5invis/Iosevka
+
+## Troubleshooting
+Clear font cache
+```bash
+rm -rf ~/.cache/fontconfig && sudo fc-cache -rv
+```
+
+Fix VSCode
+```bash
+rm -rf ~/snap/codium/common/.cache/fontconfig
+```
+
+
 ## Motivational fortunes
 
 To enable `fortune motiv`, short for motivational run the following:
