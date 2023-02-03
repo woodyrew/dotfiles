@@ -21,8 +21,11 @@ alias eslint_up="cp -v ~/Dropbox/Documents/helpful/.eslint* ./"
 # Instant web server
 alias serve="python3 -m http.server"
 
-# functions
+# Beep
+alias beep="echo -ne '\007'"
+alias beeps="beep; sleep 0.5; beep; sleep 0.25; beep; sleep 0.13; beep; sleep 0.05; beep; sleep 0.05; beep"
 
+# functions
 mkcd () {
   mkdir -p "$@" && cd "$@";
 }
