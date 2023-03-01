@@ -12,6 +12,9 @@ alias ....='cd ../../..'
 # Refresh npm packages
 alias npm_refresh_packages="rm -rf ./node_modules ./package-lock.json ./bower_components ./package.md5 && npm run npm_install || npm i"
 
+# Clear node_modules
+alias npm_clear_node_modules="find . -name 'node_modules' -type d -prune -exec echo {} \; -exec rm -rf {} \;"
+
 # Clear .orig files from repo
 alias clear_orig="find . -type f -name '*.orig' -not -path './node_modules/*' -exec rm -i {} \;"
 
