@@ -1,15 +1,14 @@
 2gua.rainbow-brackets
+astro-build.astro-vscode
 bibhasdn.unique-lines
+bierner.emojisense
 BriteSnow.vscode-toggle-quotes
 dbaeumer.vscode-eslint
 deque-systems.vscode-axe-linter
-eamodio.gitlens
-entepe85.gitlens
 eriklynd.json-tools
 esbenp.prettier-vscode
 fivethree.vscode-svelte-snippets
 jock.svg
-redhat.vscode-commons
 redhat.vscode-yaml
 streetsidesoftware.code-spell-checker
 svelte.svelte-vscode

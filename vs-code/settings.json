@@ -27,5 +27,24 @@
   "editor.linkedEditing": true,
   "workbench.editorAssociations": {
     "*.html": "default"
-  }
+  },
+  "emojisense.languages": {
+    "scss": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "markdown": true,
+    "plaintext": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "scminput": true,
+    "git-commit": true
+  },
+  "svelte.plugin.svelte.note-new-transformation": false,
+  "window.zoomLevel": 2,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }

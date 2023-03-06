@@ -1,0 +1,44 @@
+{
+  // Place your snippets for handlebars here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "Inline Partial": {
+    "prefix": "in",
+    "body": [
+      "{{#*inline '${1:partial_name}'}}",
+      "${2:Partial Content}",
+      "{{/inline}}"
+    ],
+    "description": "Handlebars: Define an inline partial"
+  },
+  "If variable default": {
+    "prefix": "ifvar",
+    "body": ["{{#if ${1:variable}}}{{$1}}{{else}}${2:default}{{/if}}"],
+    "description": "Handlebars: If with default in else"
+  },
+  "If": {
+    "prefix": "if",
+    "body": ["{{#if ${1:variable}}}$0{{/if}}"],
+    "description": "Handlebars: If"
+  },
+  "Unless": {
+    "prefix": "un",
+    "body": ["{{#unless ${1:variable}}}$0{{/unless}}"],
+    "description": "Handlebars: Unless"
+  },
+  "With": {
+    "prefix": "wi",
+    "body": ["{{#with ${1:variable}}}", "$0", "{{/with}}"],
+    "description": "Handlebars: With"
+  }
+}
