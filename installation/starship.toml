@@ -8,7 +8,6 @@ $line_break\
 $directory\
 [](fg:pink bg:salmon)\
 $git_branch\
-[| ](fg:dark bg:salmon)\
 $git_status\
 [](salmon)\
 $line_break\
@@ -126,7 +125,7 @@ format = '[ $symbol $branch ]($style)'
 
 [git_status]
 style = "bg:salmon fg:dark-grey"
-format = '[$conflicted$stashed$untracked$deleted$renamed$modified$typechanged$staged $ahead_behind ]($style)'
+format = '[(• $conflicted$stashed$untracked$deleted$renamed$modified$typechanged$staged)• $ahead_behind ]($style)'
 ahead = '${count}󰛶'
 diverged = '${ahead_count}󰛶󰲊 ${behind_count}󰛴󰲊'
 behind = '${count}󰛴'
