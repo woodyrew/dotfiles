@@ -12,25 +12,7 @@ HISTFILESIZE=10000
 HISTIGNORE=":ls:git st:node:npm i:git pr:git push:git df:c"
 ```
 
-Add alert appending to long commands.
-
-```
-alias alert='paplay /usr/share/sounds/freedesktop/stereo/suspend-error.oga & notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-```
-
-_Note:_ Check sound file locations as they generally more between OS versions.
-
-## Synapse Launcher
-
-_This isn't really needed as of 20.04 as the standard Ubuntu launcher has all the functionalities I use._
-
-A quick launcher triggered by a configurable key combination. I like `ctrl + alt + space`.
-
-```bash
-sudo apt install synapse
-```
-
-## Gnome Tweak
+## GNOME Tweaks
 
 Install via Ubuntu Software
 
@@ -59,6 +41,40 @@ npm completion >> ~/.bashrc
 ### Troubleshooting
 
 - [An error "Error: watch ENOSPC"](https://github.com/remy/nodemon/issues/214#issuecomment-114362402)
+
+## Coding fonts
+
+### Choosing:
+
+- https://www.codingfont.com/
+- https://www.programmingfonts.org/
+
+### Current Favourite
+
+1. https://monaspace.githubnext.com/ via https://www.nerdfonts.com/ (Monaspice)
+2. https://github.com/madmalik/mononoki
+
+### Config
+
+- Set system monospace font via GNOME Tweaks (`MonaspiceAr Nerd Font Propo Regular 14`)
+
+## Troubleshooting
+
+Clear font cache
+
+```bash
+rm -rf ~/.cache/fontconfig && sudo fc-cache -rv
+```
+
+Fix VSCode
+
+```bash
+rm -rf ~/snap/codium/common/.cache/fontconfig
+```
+
+## Starship cross-shell prompt
+
+[Run through the installation steps](https://starship.rs/guide/#%F0%9F%9A%80-installation)
 
 ## System multiload indicator
 
@@ -121,12 +137,10 @@ sudo apt-get install teatime-unity
 
 ## Useful of Programs
 
-- ~~Synapse - Application launcher~~
 - Meld - Diff tool: `sudo apt install meld`
 - Codium - Code Editor using VSCode source: [VSCodium](https://vscodium.com/)
 - VLC - Video playback
 - GIMP - Image editing
-- ~~Shutter - Screenshot utility `sudo snap install shutter`~~
 - Darktable - Photo workflow
 - Inkscape - Vector graphics
 - Audacity - Audio editing
@@ -139,29 +153,6 @@ sudo apt-get install teatime-unity
 - Spotify - Streaming Music
 - Dropbox - File Storage
 - Slack - Chat: [Slack .deb download](https://slack.com/downloads)
-
-## Coding fonts
-
-### Choosing:
-- https://www.codingfont.com/
-- https://www.programmingfonts.org/
-
-### Current Favourite
-
-- https://github.com/madmalik/mononoki
-- Review: https://github.com/be5invis/Iosevka
-
-## Troubleshooting
-Clear font cache
-```bash
-rm -rf ~/.cache/fontconfig && sudo fc-cache -rv
-```
-
-Fix VSCode
-```bash
-rm -rf ~/snap/codium/common/.cache/fontconfig
-```
-
 
 ## Motivational fortunes
 

@@ -1,0 +1,208 @@
+format = """
+$status\
+$line_break\
+$character\
+$time\
+[](blue)\
+$line_break\
+$directory\
+[](fg:pink bg:salmon)\
+$git_branch\
+[| ](fg:dark bg:salmon)\
+$git_status\
+[](salmon)\
+$line_break\
+[](purple)\
+$os\
+$username\
+[](fg:purple bg:teal)\
+$c\
+$elixir\
+$elm\
+$golang\
+$gradle\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+$scala\
+[](fg:teal bg:cyan)\
+$docker_context\
+[ ](fg:cyan)
+"""
+# Disable the blank line at the start of the prompt - Included in $status (Error)
+add_newline = false
+
+# A continuation prompt that displays two filled in arrows
+continuation_prompt = '󰄾 '
+
+# Set custom colour palette
+palette = 'woody'
+
+# Define custom colours
+[palettes.woody]
+# Forgrounds
+default = '#00ff00'
+dark = '#111111'
+dark-grey = '#333333'
+light = '#eeeeee'
+green = '#498a33'
+red = '#8a3333'
+
+# Backgrounds
+warn = '#700909'
+purple = '#9A348E'
+pink = '#DA627D'
+salmon = '#FCA17D'
+teal = '#86BBD8'
+cyan = '#06969A'
+blue = '#33658A'
+
+[status]
+style = 'bg:warn fg:light'
+# success_symbol = ''
+format = "[\n$symbol$common_meaning$signal_name$maybe_int]($style)"
+map_symbol = true
+disabled = false
+
+# Prompt character
+[character]
+format = '$symbol'
+success_symbol = '[ 󰸞 ](bg:green fg:light)[](fg:green bg:blue)'
+error_symbol = '[ 󱎘 ](bg:red fg:light)[](fg:red bg:blue)'
+
+[time]
+disabled = false
+time_format = "%A %F %T" # Day ISO-Date Time Format
+style = 'bg:blue fg:light'
+format = '[  $time ]($style)'
+
+[username]
+show_always = true
+style_user = "bg:purple"
+style_root = "bg:warn fg:light"
+format = '[$user ]($style)'
+disabled = false
+
+# An alternative to the username module which displays a symbol that
+# represents the current operating system
+[os]
+style = "bg:purple"
+disabled = false # Disabled by default
+
+# OS symbols override
+[os.symbols]
+Ubuntu = "  "
+
+[directory]
+style = "bg:pink fg:dark"
+format = "[ $path]($style)[$read_only]($read_only_style)[ ]($style)"
+# repo_root_format = '[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) '
+truncate_to_repo = false
+truncation_length = 0
+truncation_symbol = "…/"
+home_symbol = '󰜥'
+
+# Here is how you can shorten some long paths by text replacement
+# similar to mapped_locations in Oh My Posh:
+[directory.substitutions]
+"Documents/" = "󰈙 /"
+"Downloads/" = " /"
+"Music/" = " /"
+"Pictures/" = " /"
+"dev/" = " /"
+# Keep in mind that the order matters. For example:
+# "Important Documents" = " 󰈙 "
+# will not be replaced, because "Documents" was already substituted before.
+# So either put "Important Documents" before "Documents" or use the substituted version:
+# "Important 󰈙 " = " 󰈙 "
+
+[git_branch]
+symbol = "󰊢"
+style = "bg:salmon fg:dark"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "bg:salmon fg:dark-grey"
+format = '[$conflicted$stashed$untracked$deleted$renamed$modified$typechanged$staged $ahead_behind ]($style)'
+ahead = '${count}󰛶'
+diverged = '${ahead_count}󰛶󰲊 ${behind_count}󰛴󰲊'
+behind = '${count}󰛴'
+up_to_date = '󰱔'
+
+conflicted = '${count}󰢪 '
+untracked = '${count}󰝒 '
+stashed = '${count}󱋡 '
+modified = '${count}󱇧 '
+staged = '${count}󰈖 '
+renamed = '${count}󰾴 '
+deleted = '${count}󰮘 '
+
+
+# Environments
+[c]
+symbol = " "
+style = "bg:teal fg:dark"
+format = '[ $symbol ($version) ]($style)'
+
+[elixir]
+symbol = " "
+style = "bg:teal fg:dark"
+format = '[ $sym fg:darkbol ($version) ]($style)'
+
+[elm]
+symbol = " "
+style = "bg:teal fg:dark"
+format = '[ $symbol ($version) ]($style)'
+
+[golang]
+symbol = " "
+style = "bg:teal fg:dark"
+format = '[ $symbol ($version) ]($style)'
+
+[gradle]
+style = "bg:teal fg:dark"
+format = '[ $symbol ($version) ]($style)'
+
+[haskell]
+symbol = " "
+style = "bg:teal fg:dark"
+format = '[ $symbol ($version) ]($style)'
+
+[java]
+symbol = " "
+style = "bg:teal fg:dark"
+format = '[ $symbol ($version) ]($style)'
+
+[julia]
+symbol = " "
+style = "bg:teal fg:dark"
+format = '[ $symbol ($version) ]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:teal fg:dark"
+not_capable_style = "bg:teal fg:bold red"
+format = '[ $symbol ($version)( 󰥼 $engines_version) ]($style)'
+
+[nim]
+symbol = "󰆥 "
+style = "bg:teal fg:dark"
+format = '[ $symbol ($version) ]($style)'
+
+[rust]
+symbol = ""
+style = "bg:teal fg:dark"
+format = '[ $symbol ($version) ]($style)'
+
+[scala]
+symbol = " "
+style = "bg:teal fg:dark"
+format = '[ $symbol ($version) ]($style)'
+
+[docker_context]
+symbol = " "
+style = "bg:cyan fg:dark"
+format = '[ $symbol $context ]($style)'

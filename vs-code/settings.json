@@ -11,7 +11,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "workbench.colorTheme": "Monokai Dimmed",
   "files.associations": {
-    "*.hbs": "handlebars"
+    "*.hbs": "handlebars",
+    "*.mdx": "markdown"
   },
   "files.trimTrailingWhitespace": true,
   "workbench.editor.tabSizing": "shrink",
@@ -22,8 +23,20 @@
   "svg.minify.removeViewBox": false,
   "redhat.telemetry.enabled": false,
   "svelte.enable-ts-plugin": true,
-  "editor.fontFamily": "'Mononoki', 'Ubuntu Mono', monospace, 'Droid Sans Fallback'",
+  "editor.fontFamily": "'MonaspiceAr Nerd Font Propo', ubuntu, 'font not loaded if ubuntu",
   "editor.fontSize": 16,
+  "editor.fontWeight": "300",
+  "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02'",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
   "editor.linkedEditing": true,
   "workbench.editorAssociations": {
     "*.html": "default"
@@ -42,9 +55,29 @@
     "git-commit": true
   },
   "svelte.plugin.svelte.note-new-transformation": false,
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 1,
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.editor.labelFormat": "short",
+  "git.confirmSync": false,
+  "cSpell.userWords": ["Cloudinary", "Hyland"],
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "cssVariables.languages": ["svelte", "scss", "postcss", "css", "html"],
+  "cssVariables.lookupFiles": [
+    "packages/tokens/dist/scss/*.scss",
+    "apps/ui/src/styles/**/*.scss"
+  ],
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
 }

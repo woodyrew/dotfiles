@@ -28,6 +28,8 @@ alias serve="python3 -m http.server"
 alias beep="echo -ne '\007'"
 alias beeps="beep; sleep 0.5; beep; sleep 0.25; beep; sleep 0.13; beep; sleep 0.05; beep; sleep 0.05; beep"
 
+alias alert='beeps & notify-send --urgency=normal -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
 # functions
 mkcd () {
   mkdir -p "$@" && cd "$@";
