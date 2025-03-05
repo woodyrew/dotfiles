@@ -58,7 +58,7 @@ npm completion >> ~/.bashrc
 
 - Set system monospace font via GNOME Tweaks (`MonaspiceAr Nerd Font Propo Regular 14`)
 
-## Troubleshooting
+### Troubleshooting
 
 Clear font cache
 
@@ -75,6 +75,16 @@ rm -rf ~/snap/codium/common/.cache/fontconfig
 ## Starship cross-shell prompt
 
 [Run through the installation steps](https://starship.rs/guide/#%F0%9F%9A%80-installation)
+
+Prepend the following to [change the window title](https://starship.rs/advanced-config/#change-window-title) to be the current directory:
+
+```bash
+function set_win_title(){
+    echo -ne "\033]0; `dirs +0` \007"
+}
+
+starship_precmd_user_func="set_win_title"
+```
 
 ## System multiload indicator
 

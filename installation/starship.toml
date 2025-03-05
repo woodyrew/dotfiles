@@ -1,16 +1,15 @@
 format = """
 $status\
-$line_break\
-$character\
+$fill\
+[](blue)\
 $time\
-[](blue)\
 $line_break\
 $directory\
-[](fg:pink bg:salmon)\
-$git_branch\
+[](fg:pink)\
+($git_branch\
 $git_status\
-[](salmon)\
-$line_break\
+[](grey)
+)\
 [](purple)\
 $os\
 $username\
@@ -31,8 +30,8 @@ $scala\
 $docker_context\
 [ ](fg:cyan)
 """
-# Disable the blank line at the start of the prompt - Included in $status (Error)
-add_newline = false
+# Blank line at the start of the prompt
+add_newline = true
 
 # A continuation prompt that displays two filled in arrows
 continuation_prompt = '󰄾 '
@@ -47,10 +46,21 @@ default = '#00ff00'
 dark = '#111111'
 dark-grey = '#333333'
 light = '#eeeeee'
-green = '#498a33'
-red = '#8a3333'
+
+# GH forgrounds
+gh-success = '#0a4d00'
+gh-warn = '#06637e'
+gh-error = '#4d0000'
+
+# Fire
+fire-orange = '#f8630b'
+fire-yellow = '#fff57b'
 
 # Backgrounds
+green = '#498a33'
+grey = '#c0bbb9'
+red = '#8a3333'
+yellow = '#d3cf4c'
 warn = '#700909'
 purple = '#9A348E'
 pink = '#DA627D'
@@ -60,23 +70,22 @@ cyan = '#06969A'
 blue = '#33658A'
 
 [status]
-style = 'bg:warn fg:light'
-# success_symbol = ''
-format = "[\n$symbol$common_meaning$signal_name$maybe_int]($style)"
+style = 'bg:fire-yellow fg:dark'
+success_symbol = '[ 󰸞 ](bg:green fg:light)[](green)'
+symbol = ' 󱎘 '
+not_executable_symbol = '  '
+not_found_symbol = '  '
+sigint_symbol = '  '
+signal_symbol = ' 󱐋 '
+format = "[$symbol($common_meaning$signal_name$maybe_int [ ](fg:fire-yellow bg:fire-orange)[](fire-orange))]($style)"
 map_symbol = true
 disabled = false
-
-# Prompt character
-[character]
-format = '$symbol'
-success_symbol = '[ 󰸞 ](bg:green fg:light)[](fg:green bg:blue)'
-error_symbol = '[ 󱎘 ](bg:red fg:light)[](fg:red bg:blue)'
 
 [time]
 disabled = false
 time_format = "%A %F %T" # Day ISO-Date Time Format
 style = 'bg:blue fg:light'
-format = '[  $time ]($style)'
+format = '[ $time ]($style)'
 
 [username]
 show_always = true
@@ -120,24 +129,25 @@ home_symbol = '󰜥'
 
 [git_branch]
 symbol = "󰊢"
-style = "bg:salmon fg:dark"
-format = '[ $symbol $branch ]($style)'
+style = "bg:grey fg:dark"
+format = '([](grey)[ $symbol $branch ]($style))'
 
 [git_status]
-style = "bg:salmon fg:dark-grey"
-format = '[(• $conflicted$stashed$untracked$deleted$renamed$modified$typechanged$staged)• $ahead_behind ]($style)'
-ahead = '${count}󰛶'
-diverged = '${ahead_count}󰛶󰲊 ${behind_count}󰛴󰲊'
-behind = '${count}󰛴'
-up_to_date = '󰱔'
+style = "bg:grey fg:dark-grey"
 
-conflicted = '${count}󰢪 '
+format = '([(• $stashed$conflicted$untracked$deleted$renamed$modified$typechanged$staged)(• $ahead_behind )]($style))'
+ahead = '[${count}󰛶](bg:grey fg:gh-warn)'
+diverged = '[${ahead_count}󰛶󰲊 ${behind_count}󰛴󰲊](bg:grey fg:gh-error)'
+behind = '[${count}󰛴](bg:grey fg:gh-warn)'
+up_to_date = '[󰱔](bg:grey fg:gh-success)'
+
+conflicted = '[${count}󰢪](bg:grey fg:gh-error) '
 untracked = '${count}󰝒 '
-stashed = '${count}󱋡 '
-modified = '${count}󱇧 '
-staged = '${count}󰈖 '
-renamed = '${count}󰾴 '
-deleted = '${count}󰮘 '
+stashed = '[${count}󱋡](bg:grey fg:gh-warn) '
+modified = '[${count}󱇧](bg:grey fg:gh-warn) '
+staged = '[${count}󰈖](bg:grey fg:gh-success) '
+renamed = '[${count}󰾴](bg:grey fg:gh-warn) '
+deleted = '[${count}󰮘](bg:grey fg:gh-error) '
 
 
 # Environments
@@ -205,3 +215,6 @@ format = '[ $symbol ($version) ]($style)'
 symbol = " "
 style = "bg:cyan fg:dark"
 format = '[ $symbol $context ]($style)'
+
+[fill]
+symbol = ' '
